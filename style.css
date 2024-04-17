@@ -1,0 +1,429 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+display: flex;
+justify-content: space-between;
+padding: 15px 150px;
+}
+.menu__title{
+display:block;
+font-size: 20px;
+}
+.menu__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__header img{
+width: 20px;
+height: 20px;
+margin-right: 15px;
+}
+.menu__list .menu__list__item{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 25px; 
+    transition: 1.5s all;
+}
+.menu__list .menu__list__item :hover{
+    background-color: rgb(167, 167, 173);
+    padding: 25px;
+    border-radius: 15px;
+
+}
+#contato{
+    font-weight: bold;
+}
+
+/*Sección Title*/
+
+section.title{
+
+}
+.title__div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0px 240px;
+    background-color: rgb(222, 228, 226);
+}
+.title__bio{
+font-size: 65px;
+}
+.title__network .title__network__item{
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.title__network .title__network__item :hover{
+    font-size: 25px;
+    
+}
+/*Sección About*/
+
+section.about{
+padding: 50px 30% 50px 12%;
+background-color: rgb(175, 219, 204);
+}
+.about__title{
+font-size: 28px;
+}
+.about__container{
+  
+
+}
+/*Sección skillst*/
+
+.skills{
+text-align: center;
+
+}
+.skills__line{
+    display: flex;
+    justify-content: center;
+}
+.skills__box{
+    width: 240px;
+    height: 180px;
+    margin: 10px;
+    background-color: rgb(225, 225, 233);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+/*Sección Hobbies*/
+
+.hobbies{
+    text-align: center;  
+    
+}
+.hobbies__line{
+    display: flex;
+    justify-content: center;
+}
+.hobbies__box{
+    width: 240px;
+    height: 180px;
+    margin: 10px;
+    background-color: rgb(225, 225, 233);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+/* Experiencia Académica*/
+
+section.academic{
+    background-color: rgb(175, 219, 204);
+    padding: 50px 0px;
+}
+.academic{
+    text-align: center;
+}
+.academic__courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.academic__courses__box{
+    margin: 15px;
+}
+.academic__courses__list{
+    padding: 10px; 
+}
+.academic__courses__list h4{
+    font-size: 22px;
+}
+.academic__courses__list h4,.academic__courses__list p {
+    display: flex;
+    align-self: flex-start;
+}
+.academic__courses__list .academic__courses__item__img img{
+    width: 350px;
+    height: 150px;
+  padding: 50px;
+    background-color: #ffffff;
+} 
+
+/* experiencia*/
+
+section.experience{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px 0px;
+background-color: rgb(212, 230, 230);
+}
+.experience__section__title{
+    font-size: 28px;
+    font-weight: bold;
+}
+.experiencie__box{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.experiencia__botao--repo{
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 1px solid blue;
+}
+.experience__botao--demo{
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.experience__title{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   
+}
+.experience__text{
+    font-weight: 100;
+}
+.experience__info{
+    padding: 25px;
+}
+.experience__info-container{
+    padding: 25px;
+
+}
+ .experience__box{
+   display: flex;
+   flex-wrap: wrap;
+  
+   align-items: center;
+}
+
+.experience :nth-child(3) {
+  
+   
+    flex-direction: row-reverse;
+} 
+.experience :nth-child(5) {
+  
+   
+    flex-direction: row-reverse;
+} 
+
+
+/*Contacto*/
+
+section .formcontato{
+    width: 100%;
+    padding: 70px 0px;
+background-color: rgb(175, 219, 204);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.formcontato__contacto{
+    display: flex;
+}
+.formcontato__text{
+   padding-left: 25px;
+}
+.formcontato__title{
+    font-weight: bold;
+    font-size: 28px;
+}
+.formcontato__subtext{
+    font-weight: 300;
+    font-size: 20px;
+}
+/* .formcontato__input{
+    height: 30px;
+}
+.formcontato__textarea{
+    height: 90px;
+}
+.formcontato__input,
+.formcontato__textarea {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 40px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    border-bottom: 3px solid blue;
+} */
+
+
+.formcontato__botao{
+    display: block;
+    margin-top: 25px;
+    padding: 15px 40px;
+}
+.formcontato__botao{
+    background-color: rgb(51, 51, 218);
+    color: white;
+    font-size: 22px;
+    border: 2px solid white;
+}
+/* 
+.formcontato__input:focus::placeholder {
+    color: blue;
+} */
+
+/* sammmmmmmmmmmmmmmm */
+.form-group {
+    position: relative;
+    margin-bottom: 1.4rem;
+  }
+
+  .formcontato__input,
+  .formcontato__textarea {
+    width: 100%;
+    padding: 1.5rem 1rem 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .formcontato__input:focus,
+  .formcontato__textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 1px 0 0 #007bff;
+  }
+
+  .form-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+  }
+
+  .formcontato__input:focus + .form-label,
+  .formcontato__input:not(:placeholder-shown) + .form-label,
+  .formcontato__textarea:focus + .form-label,
+  .formcontato__textarea:not(:placeholder-shown) + .form-label {
+    top: -0.5rem;
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 800;
+  }
+
+/*footeer*/
+
+section.footer{
+   
+}
+.footer__rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__rodape :nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer__rodape :nth-child(2){
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
