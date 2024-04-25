@@ -1,12 +1,6 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 :root{
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
@@ -63,7 +57,7 @@ margin-right: 15px;
 .menu__list .menu__list__item{
     display: inline-block;
     margin: 0 15px;
-    font-size: 25px; 
+    font-size: 15px; 
     transition: 1.5s all;
 }
 .menu__list .menu__list__item :hover{
@@ -81,11 +75,21 @@ margin-right: 15px;
 section.title{
 
 }
+.title__profile{
+    height: 300px;
+    border-radius: 25%;
+    background-size: cover;
+    background-position: right;
+    object-fit: cover;
+    width: 300px;
+}
 .title__div{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding: 0px 240px;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 150px;
     background-color: rgb(222, 228, 226);
 }
 .title__bio{
@@ -99,6 +103,7 @@ font-size: 65px;
     letter-spacing: 1px;
 }
 .title__network .title__network__item :hover{
+    color:blue;
     font-size: 25px;
     
 }
